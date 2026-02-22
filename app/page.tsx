@@ -52,18 +52,24 @@ const STEPS = [
     title: "Spot",
     description: "Walk up to any real car and open CarSnap. Our YOLO-powered camera detects the vehicle in real time.",
     mediaLabel: "Capture screen",
+    mediaSrc: "/images/Snap_feature.jpg",
+    mediaAlt: "CarSnap AR car capture feature",
   },
   {
     number: "02",
     title: "Collect",
     description: "AI identifies the make and model, generates a unique card with authentic stats, and adds it to your garage.",
     mediaLabel: "Card reveal",
+    mediaSrc: "/images/Pack_result.jpg",
+    mediaAlt: "CarSnap pack opening and card reveal",
   },
   {
     number: "03",
     title: "Battle",
     description: "Build a deck from your collection, join the matchmaking queue, and fight for rewards and ranking points.",
     mediaLabel: "Battle board",
+    mediaSrc: "/images/battle_1.png",
+    mediaAlt: "CarSnap turn-based battle board",
   },
 ];
 
@@ -165,9 +171,9 @@ export default function Home() {
 
         {/* Hero phone mockups */}
         <div className="relative mt-16 w-full max-w-2xl grid grid-cols-3 gap-4 sm:gap-6">
-          <MediaSlot label="Home screen"   aspect="portrait" />
-          <MediaSlot label="Card capture"  aspect="portrait" />
-          <MediaSlot label="Battle board"  aspect="portrait" />
+          <MediaSlot label="Home screen"  aspect="portrait" src="/images/Season_1_home_screen.jpg" alt="CarSnap Season 1 home screen" />
+          <MediaSlot label="Spot a car"   aspect="portrait" src="/images/Snap_feature.jpg"         alt="CarSnap AR snap feature" />
+          <MediaSlot label="Rare card"    aspect="portrait" src="/images/Rare_Card_showcase.jpg"   alt="CarSnap rare card showcase" />
         </div>
       </section>
 
@@ -273,9 +279,9 @@ export default function Home() {
                 <h3 className="text-2xl font-black tracking-tight">{step.title}</h3>
                 <p className="text-sm text-cs-muted leading-relaxed">{step.description}</p>
 
-                {/* Screenshot placeholder */}
+                {/* Screenshot */}
                 <div className="mt-2">
-                  <MediaSlot label={step.mediaLabel} aspect="portrait" />
+                  <MediaSlot label={step.mediaLabel} aspect="portrait" src={step.mediaSrc} alt={step.mediaAlt} />
                 </div>
               </div>
             ))}
@@ -291,23 +297,28 @@ export default function Home() {
           <div className="text-center mb-14">
             <p className="text-xs font-mono uppercase tracking-[0.2em] text-cs-cyan mb-3">Gallery</p>
             <h2 className="text-4xl font-black tracking-tight">See it in action</h2>
-            <p className="mt-3 text-cs-muted text-sm max-w-md mx-auto">
-              Drop in screenshots and videos to showcase your game here.
-            </p>
           </div>
 
-          {/* Portrait screenshots row */}
+          {/* Portrait screenshots — 4 columns desktop, 2 mobile */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
-            <MediaSlot label="Garage view"      aspect="portrait" />
-            <MediaSlot label="Deck builder"     aspect="portrait" />
-            <MediaSlot label="Match rewards"    aspect="portrait" />
-            <MediaSlot label="Card collection"  aspect="portrait" />
+            <MediaSlot label="Collection"       aspect="portrait" src="/images/collection.png"               alt="Car collection / garage view" />
+            <MediaSlot label="Deck Builder"     aspect="portrait" src="/images/deck_builder.png"             alt="Deck builder screen" />
+            <MediaSlot label="Battle Modes"     aspect="portrait" src="/images/Battle_gamemodes_screen.png"  alt="Battle game modes selection" />
+            <MediaSlot label="Live Battle"      aspect="portrait" src="/images/Battle_2.png"                 alt="Live turn-based battle" />
+            <MediaSlot label="Car Selection"    aspect="portrait" src="/images/car_select.png"               alt="Car selection screen" />
+            <MediaSlot label="Car Details"      aspect="portrait" src="/images/carDerailts.png"              alt="Car details and stats" />
+            <MediaSlot label="Track Cards"      aspect="portrait" src="/images/Cards_change_with_track.png"  alt="Cards that change with the track" />
+            <MediaSlot label="Matchmaking"      aspect="portrait" src="/images/Matchmaking.jpg"              alt="Matchmaking queue screen" />
+            <MediaSlot label="Achievements"     aspect="portrait" src="/images/Achievements.jpg"             alt="Achievements screen" />
+            <MediaSlot label="Daily Challenges" aspect="portrait" src="/images/Dailies.jpg"                  alt="Daily challenges screen" />
+            <MediaSlot label="Player Profile"   aspect="portrait" src="/images/Showcase_Profile.jpg"         alt="Player profile showcase" />
+            <MediaSlot label="App Preview"      aspect="portrait" src="/images/studio64_8LFLKCGzMn.png"      alt="CarSnap app preview" />
           </div>
 
-          {/* Landscape video + wide screenshot */}
+          {/* Video placeholder — swap src/type when you have a gameplay clip */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <MediaSlot label="Gameplay video"   aspect="landscape" type="video" />
-            <MediaSlot label="Battle highlight" aspect="landscape" />
+            <MediaSlot label="Gameplay video" aspect="landscape" type="video" />
+            <MediaSlot label="Battle Replay"  aspect="landscape" type="video" />
           </div>
         </div>
       </section>
