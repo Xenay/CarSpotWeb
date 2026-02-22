@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* CarSnap Motorsport Palette */
+  --color-cs-bg:       #070A12;
+  --color-cs-surface:  #0B1220;
+  --color-cs-surface2: #0F1829;
+  --color-cs-red:      #D61F19;
+  --color-cs-red-dark: #6D0906;
+  --color-cs-cyan:     #22D3EE;
+  --color-cs-text:     #E7EEF7;
+  --color-cs-muted:    #8BA4BF;
+  --color-cs-border:   #2A3C57;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #070A12;
+  color: #E7EEF7;
+  font-family: var(--font-geist-sans, system-ui, sans-serif);
+}
+
+/* Ticker scroll animation */
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.ticker-track {
+  animation: ticker 30s linear infinite;
+}
+.ticker-track:hover {
+  animation-play-state: paused;
 }
