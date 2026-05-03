@@ -21,6 +21,11 @@ export default function Footer() {
             <h3 className="text-xs font-semibold text-cs-text/50 uppercase tracking-widest mb-4">Legal</h3>
             <ul className="space-y-2.5 text-sm text-cs-muted">
               <li>
+                <Link href="/support" className="hover:text-cs-text transition-colors">
+                  Support
+                </Link>
+              </li>
+              <li>
                 <Link href="/privacy" className="hover:text-cs-text transition-colors">
                   Privacy Policy
                 </Link>

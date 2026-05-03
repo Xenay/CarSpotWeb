@@ -30,6 +30,7 @@ export default function Header() {
           <Link href="/#features"    className="hover:text-cs-text transition-colors">Features</Link>
           <Link href="/#how-it-works" className="hover:text-cs-text transition-colors">How It Works</Link>
           <Link href="/#gallery"     className="hover:text-cs-text transition-colors">Gallery</Link>
+          <Link href="/support"      className="hover:text-cs-text transition-colors">Support</Link>
           <Link href="/privacy"      className="hover:text-cs-text transition-colors">Privacy</Link>
         </nav>
 
@@ -67,6 +68,7 @@ export default function Header() {
             <Link href="/#features"    onClick={() => setOpen(false)} className="text-cs-muted hover:text-cs-text transition-colors">Features</Link>
             <Link href="/#how-it-works" onClick={() => setOpen(false)} className="text-cs-muted hover:text-cs-text transition-colors">How It Works</Link>
             <Link href="/#gallery"     onClick={() => setOpen(false)} className="text-cs-muted hover:text-cs-text transition-colors">Gallery</Link>
+            <Link href="/support"      onClick={() => setOpen(false)} className="text-cs-muted hover:text-cs-text transition-colors">Support</Link>
             <Link href="/privacy"      onClick={() => setOpen(false)} className="text-cs-muted hover:text-cs-text transition-colors">Privacy Policy</Link>
             <a
               href="#download"

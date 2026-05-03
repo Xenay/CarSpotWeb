@@ -13,8 +13,8 @@ const STEPS = [
     description: (
       <>
         Email us at{" "}
-        <a href="mailto:privacy@carsnap.app" className="text-cs-cyan hover:underline font-medium">
-          privacy@carsnap.app
+        <a href="mailto:support.carsnaptcg@gmail.com" className="text-cs-cyan hover:underline font-medium">
+          support.carsnaptcg@gmail.com
         </a>{" "}
         with the subject line <strong className="text-cs-text">Account Deletion Request</strong>.
         Include the email address associated with your CarSnap account so we can locate your data.
@@ -166,7 +166,7 @@ export default function DeleteAccountPage() {
         >
           <p className="text-sm text-cs-muted mb-4">Ready to proceed? Send your request to:</p>
           <a
-            href="mailto:privacy@carsnap.app?subject=Account%20Deletion%20Request"
+            href="mailto:support.carsnaptcg@gmail.com?subject=Account%20Deletion%20Request"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold text-white text-sm transition-all hover:brightness-110"
             style={{ background: "linear-gradient(135deg, #D61F19, #991410)" }}
           >
@@ -174,7 +174,7 @@ export default function DeleteAccountPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            privacy@carsnap.app
+            support.carsnaptcg@gmail.com
           </a>
           <p className="mt-4 text-xs text-cs-muted/50">
             For questions about your data, also see our{" "}

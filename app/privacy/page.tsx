@@ -180,8 +180,8 @@ export default function PrivacyPage() {
 
           <p>
             To exercise any of these rights, please contact us at{" "}
-            <a href="mailto:privacy@carsnap.app" className="text-cs-cyan hover:underline">
-              privacy@carsnap.app
+            <a href="mailto:support.carsnaptcg@gmail.com" className="text-cs-cyan hover:underline">
+              support.carsnaptcg@gmail.com
             </a>.
             We will respond within 30 days.
           </p>
@@ -230,8 +230,8 @@ export default function PrivacyPage() {
             <p className="font-semibold text-cs-text mb-1">CarSnap Privacy Team</p>
             <p>
               Email:{" "}
-              <a href="mailto:privacy@carsnap.app" className="text-cs-cyan hover:underline">
-                privacy@carsnap.app
+              <a href="mailto:support.carsnaptcg@gmail.com" className="text-cs-cyan hover:underline">
+                support.carsnaptcg@gmail.com
               </a>
             </p>
           </div>
